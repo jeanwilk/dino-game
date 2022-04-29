@@ -27,7 +27,7 @@ function jump () {
                     position -= 20;
                     dino.style.bottom = position + 'px';    
                 }
-            }, 20);
+            }, 10);
         }
         else {
             // Subindo
@@ -50,7 +50,7 @@ function createCactus() {
     let leftInterval = setInterval(() => {
         if (cactusPosition < -60) {
             clearInterval(leftInterval);
-            blackground.removeChild(cactus);
+            background.removeChild(cactus);
         }
         else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
             // Game over
